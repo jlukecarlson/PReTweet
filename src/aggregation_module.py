@@ -35,16 +35,15 @@ except csv.Error as e:
 
 
 tweet_key_file = open ('../data/tweet_keys.txt','w')
-tweet_key_file.write(" This file matches tweets to their IDs.\n Each tweet is assigned a specific ID because putting the entire tweet in output files could mess up the format.\n")
+tweet_key_file.write("This file matches tweets to their IDs.\nEach tweet is assigned a specific ID because putting the entire tweet in output files could mess up the format.\n")
 tweet_key_file.write("ID \t tweet\n")
 # counter fo ID values
 ID = 1000
 for tweet, v in tweets.iteritems():
-    id_string = "%20d" % (ID)
-    tweet_key_file.write(id_string + '\t' + tweet + '\n')
+    tweet_key_file.write(str(ID) + '\t' + tweet + '\n')
     ID += 1
 
-labels_file = open('../data/labels.txt','w')
+labels_file = open('../data/labels.csv','w')
 labels_file.write("tweet ID \t humor \t appropriateness \t grammar\n")
 ID = 1000
 for tweet, values in tweets.iteritems():
