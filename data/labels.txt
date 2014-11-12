@@ -1,3 +1,3 @@
-tweet 	 humor 	 appropriateness 	 grammar
-1	3	3	3
-2	1	1	3
+tweet ID 	 humor 	 appropriateness 	 grammar
+#1000	3	3	3
+#1001	1	1	3

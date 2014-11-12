@@ -38,21 +38,21 @@ tweet_key_file = open ('../data/tweet_keys.txt','w')
 tweet_key_file.write(" This file matches tweets to their IDs.\n Each tweet is assigned a specific ID because putting the entire tweet in output files could mess up the format.\n")
 tweet_key_file.write("ID \t tweet\n")
 # counter fo ID values
-ID = 1
+ID = 1000
 for tweet, v in tweets.iteritems():
     id_string = "%20d" % (ID)
     tweet_key_file.write(id_string + '\t' + tweet + '\n')
     ID += 1
 
 labels_file = open('../data/labels.txt','w')
-labels_file.write("tweet \t humor \t appropriateness \t grammar\n")
-ID = 1
+labels_file.write("tweet ID \t humor \t appropriateness \t grammar\n")
+ID = 1000
 for tweet, values in tweets.iteritems():
     # convert each [total score, # scores] into average score
     humor = values["humor"][0] / values["humor"][1]
     appropriate = values["appropriate"][0] / values["appropriate"][1]
     grammar = values["grammar"][0] / values["grammar"][1]
-    line = str(ID) + '\t' + str(humor) + '\t' + str(appropriate) + '\t' + str(grammar) + '\n' 
+    line = '#' + str(ID) + '\t' + str(humor) + '\t' + str(appropriate) + '\t' + str(grammar) + '\n' 
     labels_file.write(line)
     # we keep track of tweet IDS
     ID +=1
