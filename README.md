@@ -4,7 +4,7 @@ PReTweet is a web application that uses crowdsourcing to determine how audiences
 
 #Repository Explanation
 
-___Data___ | 
+___data___/ | 
 - ***input.csv***
     - This file contains the information provided by crowdworkers.  The five fields are _Name_, _Humor_, _Appropriate_, _Grammar_, and _Tweet_.  
         -   _Name_ - the worker identifier assigned by the crowdsourcing platform
@@ -24,7 +24,7 @@ ___Data___ |
 *note: our project does not use any raw data, instead it will be based on user input.   
         
 
-___src___ | 
+___src___/ | 
 - *agregation_module.py*
     - Using a dictionary in Python, this program reads in data from ___input.csv___ and stores each _tweet_ as a key to another dictionary containing the  _Humor_, _Appropriate_, and _Grammar_ scores. It writes ___tweet_keys.txt___  and ___labels.csv___. 
 - *quality_control_module.py*
