@@ -1,5 +1,3 @@
-##**README**
-
 #PReTweet
 PReTweet is a web application that uses crowdsourcing to determine how audiences will respond to a potential tweet. This project was created by Luke Carlson, Noah Shpak, Connor Swords, and Eli Brockett for the class [CrowdSourcing and Human Computation](http://crowdsourcing-class.org/) at UPenn.
 
@@ -35,4 +33,6 @@ ___src___ |
     - _qualities_[ _wi_] _=_ [ Σ tweets[wi],(h,a,g)) ] / [(Σ labels[wi],(h,a,g)) - ( Σ tweets[ _wi_ ],(h,a,g))]
 
 
-
+# Visuals
+Our information will be coming from [CrowdFlower](http://www.crowdflower.com) workers. We have designed a HIT that effectively conveys the instructions as well as the grading scheme for each tweet. Here it is in its entirety:
+![Full Hit](https://github.com/jLukeC/PReTweet/blob/master/images/Full%20HIT.JPG)
