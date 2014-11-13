@@ -6,7 +6,7 @@ PReTweet is a web application that uses crowdsourcing to determine how audiences
 
 ___Data___ | 
 - ***input.csv***
-    - This file contains the information provided by crowdworkers.  The five fields are _Name_, _ Humor_, _Appropriate_, _Grammar_, and _Tweet_.  
+    - This file contains the information provided by crowdworkers.  The five fields are _Name_, _Humor_, _Appropriate_, _Grammar_, and _Tweet_.  
         -   _Name_ - the worker identifier assigned by the crowdsourcing platform
         -   _Humor_ - a subjective rating of the tweet's comic appeal ranging from 1 to 5
         -   _Appropriate_ - a subjective rating intended to quantify the age bracket for which the tweet is appropiate.  Explicit language, gore, and other similar factors are taken into account.  The rating ranged from 1 to 5.
