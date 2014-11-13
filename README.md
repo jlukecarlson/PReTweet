@@ -33,6 +33,15 @@ ___src___ |
     - _qualities_[ _wi_] _=_ [ Σ tweets[wi],(h,a,g)) ] / [(Σ labels[wi],(h,a,g)) - ( Σ tweets[ _wi_ ],(h,a,g))]
 
 
-# Visuals
+# Project Visuals
 Our information will be coming from [CrowdFlower](http://www.crowdflower.com) workers. We have designed a HIT that effectively conveys the instructions as well as the grading scheme for each tweet. Here it is in its entirety:
 ![Full Hit](https://github.com/jLukeC/PReTweet/blob/master/images/Full%20HIT.JPG)
+
+## Instructions
+![Explanations](https://github.com/jLukeC/PReTweet/blob/master/images/Instructions.JPG)
+
+## Explanation for labeling tweets
+![Explanations](https://github.com/jLukeC/PReTweet/blob/master/images/Explanations%20for%20the%20Rankings.JPG)
+
+## Questions
+![Explanations](https://github.com/jLukeC/PReTweet/blob/master/images/Questions.JPG)
