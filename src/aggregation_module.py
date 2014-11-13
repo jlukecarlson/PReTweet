@@ -40,18 +40,18 @@ tweet_key_file.write("ID \t tweet\n")
 # counter fo ID values
 ID = 1000
 for tweet, v in tweets.iteritems():
-    tweet_key_file.write(str(ID) + '\t' + tweet + '\n')
+    tweet_key_file.write('#' + str(ID) + '\t' + tweet + '\n')
     ID += 1
 
 labels_file = open('../data/labels.csv','w')
-labels_file.write("tweet ID \t humor \t appropriateness \t grammar\n")
+labels_file.write("tweet ID , humor , appropriateness , grammar\n")
 ID = 1000
 for tweet, values in tweets.iteritems():
     # convert each [total score, # scores] into average score
     humor = values["humor"][0] / values["humor"][1]
     appropriate = values["appropriate"][0] / values["appropriate"][1]
     grammar = values["grammar"][0] / values["grammar"][1]
-    line = '#' + str(ID) + '\t' + str(humor) + '\t' + str(appropriate) + '\t' + str(grammar) + '\n' 
+    line = '#' + str(ID) + ',' + str(humor) + ',' + str(appropriate) + ',' + str(grammar) + '\n' 
     labels_file.write(line)
     # we keep track of tweet IDS
     ID +=1
