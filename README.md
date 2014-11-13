@@ -1,5 +1,11 @@
 ##**README**
 
+#PReTweet
+PReTweet is a web application that uses crowdsourcing to determine how audiences will respond to a potential tweet. This project was created by Luke Carlson, Noah Shpak, Connor Swords, and Eli Brockett for the class [CrowdSourcing and Human Computation](http://crowdsourcing-class.org/) at UPenn.
+
+
+#Repository Explanation
+
 ___Data___ | 
 - ***input.csv***
     - This file contains the information provided by crowdworkers.  The five fields are _Name_, _ Humor_, _Appropriate_, _Grammar_, and _Tweet_.  
@@ -16,7 +22,8 @@ ___Data___ |
     - This file matches tweets to their IDs.  Each tweet is assigned a specific ID because putting the entire tweet in output files could create formatting problems.
 - ***worker_quality.csv***
     - This file contains the output of  *quality_control_module.py* and has the _Name_ and _Quality_ fields.
-   
+
+*note: our project does not use any raw data, instead it will be based on user input.   
         
 
 ___src___ | 
