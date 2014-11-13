@@ -24,7 +24,7 @@ ___src___ |
     - Using a dictionary in Python, this program reads in data from ___input.csv___ and stores each _tweet_ as a key to another dictionary containing the  _Humor_, _Appropriate_, and _Grammar_ scores. It writes ___tweet_keys.txt___  and ___labels.csv___. 
 - *quality_control_module.py*
     - This program reads in ___tweet_keys.txt___  and ___labels.csv___ and uses the values to calculate worker quality. 
-    - __labels__[_tweets_[ wi ]_] = [1 / ( _| _tweets_[ _wi_] _|_ )]  * Σ (h, a, g ∈ _tweets_[ _wi_]), where w_i_ is the _i_ th worker; tweets is the list of tweets for each worker; and _h_, _a_, and _g_ are the data fields _Humor_, _Appropriate_, and _Grammar_.  The output of this is a dictionary with the average scores for  _Humor_, _Appropriate_, and _Grammar_.
+    - _labels[tweets[ wi ]]_ = [1 / ( _| tweets[ wi] |_ )]  * Σ (h, a, g ∈ _tweets[ wi]_ ), where wi is the _i_ th worker; tweets is the list of tweets for each worker; and _h_, _a_, and _g_ are the data fields _Humor_, _Appropriate_, and _Grammar_.  The output of this is a dictionary with the average scores for  _Humor_, _Appropriate_, and _Grammar_.
     - _qualities_[ _wi_] _=_ [ Σ tweets[wi],(h,a,g)) ] / [(Σ labels[wi],(h,a,g)) - ( Σ tweets[ _wi_ ],(h,a,g))]
 
 
