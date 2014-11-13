@@ -37,7 +37,7 @@ except csv.Error as e:
 tweet_key_file = open ('../data/tweet_keys.txt','w')
 tweet_key_file.write("This file matches tweets to their IDs.\nEach tweet is assigned a specific ID because putting the entire tweet in output files could mess up the format.\n")
 tweet_key_file.write("ID \t tweet\n")
-# counter fo ID values
+# counter for ID values
 ID = 1000
 for tweet, v in tweets.iteritems():
     tweet_key_file.write('#' + str(ID) + '\t' + tweet + '\n')
