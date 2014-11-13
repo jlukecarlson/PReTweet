@@ -45,3 +45,7 @@ Our information will be coming from [CrowdFlower](http://www.crowdflower.com) wo
 
 ## Questions
 ![Explanations](https://github.com/jLukeC/PReTweet/blob/master/images/Questions.JPG)
+
+# Project Flowchart
+![Flow Chart](https://github.com/jLukeC/PReTweet/blob/master/images/Project%20Flowchart.png)
+*note: we may switch to using CrowdFlower's API which would return a JSON feed instead of a csv
