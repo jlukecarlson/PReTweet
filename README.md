@@ -4,9 +4,9 @@ PReTweet is a web application that uses crowdsourcing to determine how audiences
 
 #Repository Explanation
 
-___Data___ | 
+___data___/  
 - ***input.csv***
-    - This file contains the information provided by crowdworkers.  The five fields are _Name_, _ Humor_, _Appropriate_, _Grammar_, and _Tweet_.  
+    - This file contains the information provided by crowdworkers.  The five fields are _Name_, _Humor_, _Appropriate_, _Grammar_, and _Tweet_.  
         -   _Name_ - the worker identifier assigned by the crowdsourcing platform
         -   _Humor_ - a subjective rating of the tweet's comic appeal ranging from 1 to 5
         -   _Appropriate_ - a subjective rating intended to quantify the age bracket for which the tweet is appropiate.  Explicit language, gore, and other similar factors are taken into account.  The rating ranged from 1 to 5.
@@ -24,7 +24,7 @@ ___Data___ |
 *note: our project does not use any raw data, instead it will be based on user input.   
         
 
-___src___ | 
+___src___/  
 - *agregation_module.py*
     - Using a dictionary in Python, this program reads in data from ___input.csv___ and stores each _tweet_ as a key to another dictionary containing the  _Humor_, _Appropriate_, and _Grammar_ scores. It writes ___tweet_keys.txt___  and ___labels.csv___. 
 - *quality_control_module.py*
@@ -45,3 +45,7 @@ Our information will be coming from [CrowdFlower](http://www.crowdflower.com) wo
 
 ## Questions
 ![Explanations](https://github.com/jLukeC/PReTweet/blob/master/images/Questions.JPG)
+
+# Project Flowchart
+![Flow Chart](https://github.com/jLukeC/PReTweet/blob/master/images/Project%20Flowchart.png)
+*note: we may switch to using CrowdFlower's API which would return a JSON feed instead of a csv
